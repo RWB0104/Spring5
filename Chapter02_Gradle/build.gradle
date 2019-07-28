@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+compileJava.options.encoding = "MS949"
+
+repositories
+{
+	mavenCentral()
+}
+
+dependencies
+{
+	compile 'org.springframework:spring-context:5.0.2.RELEASE'
+}
+
+// 더 이상 사용하지 않는 방식
+// 사용 시 오류 발생
+//task wrapper(type: Wrapper)
+//{
+//	gradleVersion = 5.5.1
+//}
